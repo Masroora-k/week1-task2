@@ -1,0 +1,703 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+/* -----------------HEADER-------------------- */
+.main_body .navbar{
+    height: 65px;
+    width: 100%;
+    background: #000;
+    padding-bottom: 12px;
+    padding-top: 12px;
+    display: flex;
+}
+.navbar .left_nav_sec{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    padding-left: 64px;
+    padding-top: 3px;
+}
+.left_nav_sec .uber{
+    font-family: UberMove, UberMoveText, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: -2px;
+    color: #fff;
+}
+.left_nav_sec ul{
+    list-style: none;
+    display: flex;
+    padding: 0px 30px;
+    margin-right: 1px;
+}
+.left_nav_sec ul .nav_links{
+    padding: 5px 15px 0px;
+    font-family: UberMoveText, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    border-radius: 9999px;
+    cursor: pointer;
+}
+.left_nav_sec ul .nav_links:hover{
+    background: #1a1a1a;
+}
+.left_nav_sec .nav_links a{
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+}
+.left_nav_sec .nav_about{
+    border-radius: 9999px;
+    cursor: pointer;
+}
+.nav_about button{
+    background: #000;
+    border: none;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    display: flex;
+    padding: 10px 15px 0px;
+    height: 100%;
+    border-radius: 9999px;
+}
+.left_nav_sec .nav_about:hover{
+    background: #1a1a1a;
+}
+.nav_about button:hover{
+    background: #1a1a1a;
+}
+.nav_about .arrow-down_icon{
+    padding-left: 10px;
+
+}
+.nav_about .about_dropdown{
+    width: 250px;
+    height: 400px;
+    background: #ffff;
+    position: relative;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    display: none;
+}
+.about_dropdown ul{
+    list-style: none;
+    display: block;
+    padding: 10px 0px;
+}
+.about_dropdown ul li{
+    width: 100%;
+    height: 35px;
+    padding-top: 10px;
+    font-family: UberMoveText, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    padding-left: 10px;
+}
+.about_dropdown ul li:hover{
+    background: #efe8e8;
+}
+.about_dropdown ul li a{
+    color: rgb(117, 117, 117);
+}
+.about_dropdown ul li a:hover{
+    color: #000;
+}
+
+.navbar .right_nav_sec{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    padding-right: 64px;
+    padding-top: 3px;
+    justify-content: flex-end;
+}
+.right_nav_sec ul{
+    display: flex;
+}
+.right_nav_sec ul li{
+    height: 100%;
+}
+.right_nav_sec ul li button{
+    height: 100%;
+    padding: 10px 15px 0px;
+    display: flex;
+    border-radius: 9999px;
+    border: none;
+    font-family: UberMoveText, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    background: #000;
+    
+}
+.right_nav_sec ul li button svg{
+    margin-right: 10px;
+}
+.right_nav_sec ul li button:hover{
+    background: #1a1a1a;
+}
+.right_nav_sec ul li .signup_button{
+    color: #000;
+    background: #fff;
+}
+.right_nav_sec ul li .signup_button:hover{
+    background: #dbd6d6;
+}
+
+
+
+/* -------------FIRST SECTION--------------- */
+
+.main_body .container{
+    height: 840px;
+    background: #000;
+}
+.main_body .first_sec{
+    display: flex;
+    padding: 50px 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+    height: 100%;
+}
+.first_sec .left_sec{
+    width: 50%;
+    height: 100%;
+    padding: 50px 40px;
+}
+.first_sec .right_sec{
+    width: 50%;
+    height: 100%;
+}
+.left_sec .title_part{
+    font-family: UberMove, UberMoveText, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin-top: 115px;
+    padding-bottom: 15px;
+}
+.left_sec .title_part h1{
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 64px;
+    color: #fff;
+}
+.left_sec .title_part p{
+    font-size: 17px;
+    color: #fff;
+    font-weight: normal;
+    padding-top: 35px;
+}
+.left_sec .form_part{
+    font-family:  UberMoveText, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.left_sec .form_part .location{
+    height: 50px;
+    display: flex;
+    background: #ffffff;
+    width: 70%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.form_part .location .icon{
+    width: 10%;
+    height: 100%;
+    padding: 16px 14px;
+}
+.form_part .location .user_input1{
+    padding: 10px;
+    width: 70%;
+
+}
+.location .user_input1 input{
+    height: 30px;
+    width: 100%;
+    cursor: text;
+    border: none;
+}
+.location .user_input1 input:focus{
+    border: none;
+    outline: none;
+}
+.location .user_input1 input::placeholder{
+    color: #5E5E5E;
+    font-size: 16px;
+}
+.form_part .location .navigate_icon{
+    width: 20%;
+    padding: 15px;
+}
+.form_part .location .navigate_icon svg{
+    height: 25px;
+    width: 25px;
+    margin-left: 20px;
+}
+
+.form_part .location .user_input2{
+    padding: 10px;
+    width: 70%;
+
+}
+.location .user_input2 input{
+    height: 30px;
+    width: 100%;
+    cursor: text;
+    border: none;
+}
+
+.location .user_input2 input:focus{ /* When click the text field does'nt show any border or default outline */
+    border: none;
+    outline: none;
+}
+.location .user_input2 input::placeholder{
+    color: #5E5E5E;
+    font-size: 16px;
+}
+.form_part .left_line{
+    width: 50px;
+    height: 42px;
+    position: relative;
+    z-index: 1;
+    top: -26px;
+    left: 23px;
+    border-left: 1px solid #f7f4ee;
+}
+.form_part .price_button{
+    padding: 0px 0px 30px;
+    position: relative;
+    top: -25px;
+
+}
+.form_part .price_button button{
+    font-size: 16px;
+    font-weight: 500;
+    font-family: UberMoveText, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 8px;
+    border: none;
+    color: #000;
+    background-color: #FFFFFF;
+}
+.container .right_sec{
+    padding: 18px;
+}
+
+/* ------------------------SECOND SECTION---------------------------- */
+
+.container2{
+    height: 683px;
+    background: #fff;
+}
+.container2 .second_sec{
+    display: flex;
+    padding: 60px 60px;
+    margin-left: 40px;
+    margin-right: 40px;
+    height: 100%;
+}
+.second_sec .left_img_sec{
+    width: 50%;
+    height: 100%;
+}
+.second_sec .right_signin_sec{
+    width: 50%;
+    height: 100%;
+    padding: 90px 10px 20px 113px;
+}
+.second_sec .description_sec h1{
+        font-family: UberMove, UberMoveText, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 52px;
+        font-weight: 700;
+        line-height: 64px;
+        color: #000000;
+}
+.second_sec .description_sec p{
+    font-family: UberMoveText, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    padding-top: 35px;
+    color: #000000;
+    
+}
+.right_signin_sec .signin_btn_link_sec{
+    padding: 42px 5px;
+    display: flex;
+}
+.right_signin_sec .get_start_btn{
+    width: 31%;
+    height: 50px;
+    background-color: #000000;
+    line-height: 45px;
+    text-align: center;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+.signin_btn_link_sec .get_start_btn a{
+    font-family: UberMoveText, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #FFFFFF;
+}
+.right_signin_sec .get_start_btn:hover{
+    background-color: #262525;
+}
+
+.signin_btn_link_sec .link_for_signin {
+    font-family: UberMoveText, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-color: #dfd4d4;
+    color: #000000;
+}
+.signin_btn_link_sec a .signin_link_sec{
+    width: 100%;
+    height: 37px;
+    padding-top: 12px;
+    
+}
+
+/* --------------------THIRD SECTION-------------------- */
+
+
+.container3{
+    height: 690px;
+    background: #fff;
+}
+.container3 .third_sec{
+    display: flex;
+    padding: 60px 60px;
+    margin-left: 40px;
+    margin-right: 40px;
+    height: 100%;
+}
+.third_sec .left_img_sec{
+    width: 50%;
+    height: 100%;
+    padding-left: 15px;
+}
+.third_sec .right_signin_sec{
+    width: 50%;
+    height: 100%;
+    padding: 105px 115px 20px 0px;
+}
+.third_sec .description_sec h1{
+        font-family: UberMove, UberMoveText, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 52px;
+        font-weight: 700;
+        line-height: 64px;
+        color: #333333;
+}
+.third_sec .description_sec p{
+    font-family: UberMoveText, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    padding-top: 35px;
+    color: #333333;
+}
+
+/* ----------------FOURTH SECTION----------------- */
+
+.container4{
+    height: 683px;
+    background: #fff;
+}
+.container4 .fourth_sec{
+    display: flex;
+    padding: 60px 60px;
+    margin-left: 40px;
+    margin-right: 40px;
+    height: 100%;
+}
+
+.fourth_sec .left_img_sec{
+    width: 50%;
+    height: 100%;
+}
+.fourth_sec .right_signin_sec{
+    width: 50%;
+    height: 100%;
+    padding: 90px 10px 20px 113px;
+}
+.fourth_sec .description_sec h2{
+    font-family: UberMove, UberMoveText, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 44px;
+    color: #000000;
+}
+.fourth_sec .description_sec p{
+    font-family: UberMoveText, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    padding-top: 35px;
+    color: #000000;
+    
+}
+
+/* --------------FIFTH SECTION-------------- */
+
+.container5{
+    height: 437px;
+    background-color: #F6F6F6;
+}
+.container5 .fifth_sec{
+    display: flex;
+    flex-direction: column;
+    padding: 60px 60px;
+    margin-left: 40px;
+    margin-right: 40px;
+    height: 100%;
+}
+.fifth_sec .qr_head{
+    height: 50px;
+    width: 100%;
+    padding: 6px 0px;
+}
+.fifth_sec .qr_head h2{
+    font-family: UberMove, UberMoveText, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 44px;
+}
+.fifth_sec .qr_code_sec{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    padding: 40px 0px 30px;
+}
+.qr_code_sec .qr_code1{
+    width: 50%;
+    height: 100%;
+}
+.qr_code_sec .qr_code2{
+    width: 50%;
+    height: 100%;
+}
+.qr_code_sec .qr_code1 .qr_box_left{
+    background: #fff;
+    width: 97%;
+    height: 90%;
+    display: flex;
+    padding: 20px;
+}
+.qr_code_sec .qr_code2 .qr_box_right{
+    background: #fff;
+    width: 97%;
+    height: 90%;
+    display: flex;
+    padding: 20px;
+}
+.qr_code_sec .qr_code1 .qr_box_left .image_qr{
+    
+    width: 150px;
+    height: 150px;
+}
+.qr_code1 .qr_box_left .image_qr image{
+    width: 100%;
+    height: 100%;
+}
+.qr_box_left .uber_app_link{
+    padding: 60px 20px;
+}
+.qr_box_left .uber_app_link h2{
+    font-family: UberMove, UberMoveText, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 24px;
+    font-weight: 700;   
+    color: #000000;
+    line-height: 32px;
+    letter-spacing: 0;
+}
+.qr_box_left .uber_app_link p{
+    letter-spacing: 0;
+    font-family: UberMoveText, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+}
+.qr_box_left .right_arrow_icon{
+    width: 50px;
+    padding-top: 72px;
+    padding-left: 35px;
+}
+.qr_box_left .right_arrow_icon arrow{
+    fill: #000000;
+    width: 25px;
+    height: 25px;
+}
+
+.qr_code_sec .qr_code2 .qr_box_right .image_qr{
+    
+    width: 150px;
+    height: 150px;
+}
+.qr_code2 .qr_box_right .image_qr image{
+    width: 100%;
+    height: 100%;
+}
+.qr_box_right .uber_app_link{
+    padding: 60px 20px;
+}
+.qr_box_right .uber_app_link h2{
+    font-family: UberMove, UberMoveText, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 24px;
+    font-weight: 700;   
+    color: #000000;
+    line-height: 32px;
+    letter-spacing: 0;
+}
+.qr_box_right .uber_app_link p{
+    letter-spacing: 0;
+    font-family: UberMoveText, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+}
+.qr_box_right .right_arrow_icon{
+    width: 50px;
+    padding-top: 72px;
+    padding-left: 35px;
+}
+.qr_box_right .right_arrow_icon arrow{
+    fill: #000000;
+    width: 25px;
+    height: 25px;
+}
+
+
+/* ----------------------FOOTER SECTION------------------------ */
+
+.footer_sec{
+    height: 1000px;
+    width: 100%;
+    background: #000000;
+}
+.footer_sec .container6{
+    display: flex;
+    flex-direction: column;
+    padding: 60px 60px;
+    margin-left: 40px;
+    margin-right: 40px;
+    height: 100%;
+}
+.footer_sec .container6 .link1{
+    color: #fff;
+    font-family: UberMove, UberMoveText, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 112px;
+}
+.footer_sec .container6 .link2{
+    color: #FFFFFF;
+    font-family: UberMoveText, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: inherit;
+    font-weight: 400;
+    line-height: 1;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
+}
+.container6 .footer_sec2{
+    padding: 100px 0px 20px;
+    display: flex;
+}
+.container6 .footer_sec2 .footer_links{
+    width: 25%;
+}
+.footer_sec2 .footer_links p{
+    color: #FFFFFF;
+    font-family: UberMoveText, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    padding-bottom: 10px;
+
+}
+.footer_sec2 .footer_links ul {
+    list-style: none;
+}
+.footer_sec2 .footer_links ul li a{
+    font-family: UberMoveText, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 40px;
+    color: #FFFFFF;
+}
+.container6 .footer_icons{
+    display: flex;
+    width: 100%;
+}
+.footer_icons .left_side{
+    width: 65%;
+    padding-top: 12px;
+}
+
+.container6 .footer_sec3 .footer_icons .left_side a{
+    margin-right: 100px;
+    color: #ffffff;
+}
+.footer_icons .left_side a svg{
+    color: #ffffff;
+}
+.footer_icons .right_side{
+    width: 35%;
+    text-align: end;
+}
+.right_side button{
+    margin-left: 10px;
+    background: #000000;
+    border: none;
+}
+.right_side button div{
+    padding: 10px;
+}
+.right_side button div svg{
+    margin-right: 10px;
+    color: #ffffff;
+}
+.right_side button div span{
+    vertical-align: top;
+    color: #ffffff;
+    
+    font-family: UberMoveText, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+}
+
+.footer_sec3 .app_link{
+    width: 100%;
+    display: flex;
+    padding: 50px 0px;
+}
+.app_link img{
+    width: 135px;
+    height: 50px;
+    margin-right: 10px;
+}
+.footer_sec3 .copyright_sec{
+    padding: 10px 0px;
+    display: flex;
+}
+.footer_sec3 .copyright_sec .left p{
+    color: #AFAFAF;
+    font-family: UberMoveText, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 20px;
+}
+.footer_sec3 .copyright_sec .left{
+    width: 50%;
+}
+.footer_sec3 .copyright_sec .right{
+    width: 50%;
+    text-align: end;
+}
+.footer_sec3 .copyright_sec .right a{
+    margin-left: 25px;
+    color: #AFAFAF;
+    font-family: UberMoveText, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif; 
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 20px;
+}
